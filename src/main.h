@@ -20,6 +20,7 @@ public:
 
 	int Initialize();
 	void Shutdown();
+	void ServerConnectionEvent();
 	void DisplayNameChangeEvent(uint64 server_handle, anyID client_id, const char* display_name, const char* client_uid);
 	void ChangeChannelEvent(uint64 server_handle, anyID client_id, uint64 old_ch_id, uint64 new_ch_id, int visibility, const char* move_message);
 	void ChangeChannelEvent(uint64 server_handle, anyID client_id, uint64 old_ch_id, uint64 new_ch_id, int visibility, anyID mover_id, const char* mover_name, const char* mover_uid, const char* move_message);
