@@ -162,9 +162,9 @@ PLUGINS_EXPORTDLL const char* ts3plugin_keyPrefix();
 #else
 #define _strcpy(dest, destSize, src) { strncpy(dest, src, destSize-1); (dest)[destSize-1] = '\0'; }
 #endif
-
+/*
 #ifdef _WIN32
-/* Helper function to convert wchar_T to Utf-8 encoded strings on Windows */
+/* Helper function to convert wchar_T to Utf-8 encoded strings on Windows 
 static int wcharToUtf8(const wchar_t* str, char** result) {
 	int outlen = WideCharToMultiByte(CP_UTF8, 0, str, -1, 0, 0, 0, 0);
 	*result = (char*)malloc(outlen);
@@ -175,3 +175,8 @@ static int wcharToUtf8(const wchar_t* str, char** result) {
 	return 0;
 }
 #endif
+*/
+
+TS3Functions* ts3();
+char* plugin_id();
+const char* plugin_name();

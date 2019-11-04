@@ -615,3 +615,16 @@ const char* ts3plugin_keyPrefix() {
 /* Called when client custom nickname changed */
 void ts3plugin_onClientDisplayNameChanged(uint64 serverConnectionHandlerID, anyID clientID, const char* displayName, const char* uniqueClientIdentifier) {
 }
+
+TS3Functions* ts3()
+{
+	return &ts3Functions;
+}
+char* plugin_id()
+{
+	return pluginID;
+}
+const char* plugin_name()
+{
+	return main->kPluginName.c_str();
+}
