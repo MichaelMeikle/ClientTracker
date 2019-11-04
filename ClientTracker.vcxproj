@@ -19,11 +19,13 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\log.h" />
     <ClInclude Include="src\main.h" />
     <ClInclude Include="src\teamspeak.h" />
     <ClInclude Include="src\plugin.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\log.cpp" />
     <ClCompile Include="src\plugin.cpp" />
     <ClCompile Include="src\main.cpp" />
   </ItemGroup>
